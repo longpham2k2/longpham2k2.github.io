@@ -1,4 +1,6 @@
 {
-  "version": "1.2.0",
-  "buildNumber": "20"
+  "appName": "Edudigital",
+  "buildNumber": "20",
+  "packageName": "vn.edusoft.edudigital",
+  "version": "1.2.0"
 }

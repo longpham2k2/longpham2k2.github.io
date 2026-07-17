@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spike Roller</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #1a1c2c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: system-ui, sans-serif;
+        color: #cfd2e0;
+      }
+      .wrap { text-align: center; }
+      canvas {
+        background: #0d0f1c;
+        border-radius: 8px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+        max-width: 100%;
+        outline: none;         /* engine listens for keys on the canvas */
+        cursor: pointer;
+      }
+      p { font-size: 13px; opacity: 0.7; margin: 12px 0 0; }
+      kbd {
+        background: #2c2f45;
+        border-radius: 4px;
+        padding: 1px 6px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- tabindex makes the canvas focusable so the engine's InputHandler
+           (which binds keydown/keyup to the canvas) receives keys. -->
+      <canvas id="game" width="960" height="540" tabindex="0"></canvas>
+      <p>
+        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> move &nbsp;&middot;&nbsp;
+        <kbd>Space</kbd> / <kbd>&uarr;</kbd> jump &nbsp;&middot;&nbsp;
+        <kbd>R</kbd> restart &nbsp;&mdash;&nbsp; reach the flag, don't touch the spikes.
+      </p>
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

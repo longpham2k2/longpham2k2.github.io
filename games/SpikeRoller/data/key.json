@@ -1,0 +1,6 @@
+{
+    "LEFT": ["ArrowLeft", "a", "A"],
+    "RIGHT": ["ArrowRight", "d", "D"],
+    "JUMP": [" ", "Spacebar", "ArrowUp", "w", "W"],
+    "RESTART": ["r", "R"]
+}
